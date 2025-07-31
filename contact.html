@@ -2,21 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact - Personal Portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
-  <h1>Contact Me</h1>
-  <p>This is the Contact page.</p>
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
 
+                <div class="contact-info">
+                    <p>
+                        <a href="mailto:kavyagupta3030@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i> kavyagupta3030@gmail.com
+                        </a>
+                    </p>
+
+
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kavya-gupta-442a62285/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kavyagupta3011" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@KavyaGupta719" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <a href="resume/KavyaGupta_Resume.pdf" download class="btn btn2">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+  </div>
   <!-- Navigation -->
-  <nav class="icon-nav">
-  <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
-  <a href="about.html" title="About"><i class="fa-solid fa-user"></i></a>
-  <a href="portfolio.html" title="Portfolio"><i class="fa-solid fa-folder-open"></i></a>
-  <a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a>
-</nav>
+    <nav class="icon-nav">
+        <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="about.html" title="About"><i class="fa-solid fa-user"></i></a>
+        <a href="portfolio.html" title="Portfolio"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+    </nav>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyyPihXJ5WR5orBshpmYqOoS9yVD14RI164mu98tVY1xyH99JTNPs-CIqlJzQglTh6s/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
