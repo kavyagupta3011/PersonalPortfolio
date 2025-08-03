@@ -442,47 +442,64 @@ body {
 
 /* === Skills Section === */
 .skills-section h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
   color: #00ffff;
   text-align: center;
+  font-weight: 600;
+  font-style: italic;
 }
+
 
 .skill-category {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  background: #111;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px #00ffff15;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 0.8s ease both;
+}
+.skill-category:hover {
+  transform: translateY(-6px);
 }
 
+
 .skill-category h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #ff004f;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff004f;
+  padding-left: 15px;
+  font-weight: 600;
 }
 
 .logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
   align-items: center;
+  margin-top: 20px;
 }
 
-.logos i,
 .logos img {
-  font-size: 32px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
   filter: drop-shadow(0 0 3px #00ffff60);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.logos i:hover,
 .logos img:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 6px #00ffff);
 }
 
+
 .custom-logo {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
 }
 
 
