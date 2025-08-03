@@ -1,22 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
 </head>
 <body>
-  <h1>About Me</h1>
-  <p>This is the About page.</p>
 
-  <!-- Navigation -->
-  <nav class="icon-nav">
-  <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
-  <a href="about.html" title="About"><i class="fa-solid fa-user"></i></a>
-  <a href="portfolio.html" title="Portfolio"><i class="fa-solid fa-folder-open"></i></a>
-  <a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+<section id="about-section">
+  <h1 class="section-title">About Me</h1>
+
+  <!-- About Box -->
+  <div class="about-box">
+    <p>
+      I’m passionate about Machine Learning, software development, and building practical tech solutions — from finance trackers to Discord bots. Currently exploring Deep Learning, I’ve begun working through foundational topics like neural networks, activation functions, loss functions, and backpropagation.<br><br>
+      Beyond academics, I actively contribute to campus life — from co-organizing events for LeanIn-WomenInTech and TEDx to leading event design in the Vinci Art Club.
+    </p>
+  </div>
+
+  <!-- Info Cards Grid -->
+  <div class="info-grid">
+    <div class="timeline-card">
+      <span class="timeline">Jul 2023 – Present</span>
+      <h3>CSE at IIIT Bangalore</h3>
+      <ul>
+        <li>Currently in my 3rd year of the Integrated M.Tech Program</li>
+      </ul>
+    </div>
+
+    <div class="timeline-card">
+        <span class="timeline">Jun 2024 – Present</span>
+        <h3>LeanIn – Women in Tech Club</h3>
+        <ul>
+            <li>Core Member</li>
+            <li>Co-organize initiatives to promote tech opportunities for women</li>
+            <li>Facilitate scholarship awareness sessions reaching women students</li>
+        </ul>
+    </div>
+
+
+    <div class="timeline-card">
+        <span class="timeline">Mar 2024 – Present</span>
+        <h3>Vinci – Art Club</h3>
+        <ul>
+            <li>Core Member</li>
+            <li>Lead decoration and event design for various art events on campus</li>
+            <li>Contribute to visual design and setup for Infin8, IIITB’s annual cultural fest</li>
+        </ul>
+    </div>
+
+    <div class="timeline-card">
+        <span class="timeline">Jan 2024</span>
+        <h3>TEDx IIITB / Confluence</h3>
+        <ul>
+            <li>Volunteer</li>
+            <li>Helped organize campus event setup and managed audience engagement during the TEDx event with 200+ attendees</li>
+        </ul>
+    </div>
+
+
+    
+  </div>
+
+  <!-- Skills Section -->
+  <div class="skills-section">
+    <h2>Skills</h2>
+
+    <div class="skill-category">
+      <h3>Languages</h3>
+      <div class="logos">
+        <i class="devicon-python-plain colored"></i>
+        <i class="devicon-c-plain colored"></i>
+        <i class="devicon-cplusplus-plain colored"></i>
+        <i class="devicon-java-plain colored"></i>
+        <i class="devicon-mysql-plain colored"></i>
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-latex-original colored"></i>
+        <i class="devicon-dart-plain colored"></i>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Libraries & Frameworks</h3>
+      <div class="logos">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/matplotlib.svg" class="custom-logo" title="Matplotlib">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/pandas.svg" class="custom-logo" title="Pandas">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/numpy.svg" class="custom-logo" title="NumPy">
+        <i class="devicon-flutter-plain colored"></i>
+        <i class="devicon-react-original colored"></i>
+        <i class="devicon-nodejs-plain colored"></i>
+        <i class="devicon-express-original colored"></i>
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/spacy.svg" class="custom-logo" title="spaCy">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/tesseract.svg" class="custom-logo" title="Tesseract OCR">
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Database</h3>
+      <div class="logos">
+        <i class="devicon-mysql-plain colored"></i>
+        <i class="devicon-mongodb-plain colored"></i>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Tools</h3>
+      <div class="logos">
+        <i class="devicon-vscode-plain colored" title="VSCode"></i>
+        <i class="devicon-intellij-plain colored" title="IntelliJ IDEA"></i>
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/androidstudio.svg" class="custom-logo" title="Android Studio">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/ltspice.svg" class="custom-logo" title="LTSpice">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mars.svg" class="custom-logo" title="MARS Simulator">
+        <i class="devicon-github-original colored"></i>
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/vim.svg" class="custom-logo" title="Vim">
+        <i class="devicon-latex-original colored"></i>
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/canva.svg" class="custom-logo" title="Canva">
+        <i class="devicon-firebase-plain colored"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom Nav -->
+<nav class="icon-nav">
+  <a href="index.html"><i class="fa-solid fa-house"></i></a>
+  <a href="about.html"><i class="fa-solid fa-user"></i></a>
+  <a href="portfolio.html"><i class="fa-solid fa-folder-open"></i></a>
+  <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
 </nav>
+
 </body>
 </html>
