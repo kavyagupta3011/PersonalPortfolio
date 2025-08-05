@@ -1,22 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <h1>My Projects</h1>
-  <p>This is the Portfolio page.</p>
+  <section class="portfolio-section">
+    <h1 class="portfolio-title">Portfolio</h1>
 
-  <!-- Navigation -->
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title">Receiptly</div>
+          <div class="project-meta">Jun 2025</div>
+        </div>
+        <div class="tech-stack">
+          <span>React.js</span><span>Node.js</span><span>MongoDB</span>
+        </div>
+        <div class="project-description">
+          Receiptly is an AI-powered full-stack web application to parse receipt images using Tesseract OCR, spaCy, and a TF-IDF + Naive Bayes classifier (scikit-learn), with real-time receipt data stored in MongoDB and a separate LLM-based finance chatbot using Gemini 1.5 Flash.
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/kavyagupta3011/Receiptly" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title">Wallet Watch</div>
+          <div class="project-meta">Oct-Nov 2024</div>
+        </div>
+        <div class="tech-stack">
+          <span>Flutter</span><span>Firebase</span><span>Dart</span><span>C</span>
+        </div>
+        <div class="project-description">
+          Wallet Watch is an easy-to-use finance app built with Flutter and Firebase. It helps users track spending, manage budgets, and set financial goals. It uses Firebase Authentication for login, Firestore for data storage, and the ExchangeRate API for live currency conversion.
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/kavyagupta3011/Wallet_Watch" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-title">Project Three</div>
+          <div class="project-meta">2022</div>
+        </div>
+        <div class="tech-stack">
+          <span>Discord API</span><span>Python</span><span>CSS</span><span>Canva</span>
+        </div>
+        <div class="project-description">
+          Abili.exe is a Discord arcade bot built with Python, discord.py, and asyncio. It offers 10 mystery storylines, 5 cipher and puzzle-based games like Caesar cipher, Morse decoder, Scramble, and Hangman. It features emoji-based inputs, real-time clue unlocking, and timed challenges for an engaging detective experience.
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/kavyagupta3011/Alibi.exe" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Add more project-cards below as needed -->
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
   <nav class="icon-nav">
-  <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
-  <a href="about.html" title="About"><i class="fa-solid fa-user"></i></a>
-  <a href="portfolio.html" title="Portfolio"><i class="fa-solid fa-folder-open"></i></a>
-  <a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a>
-</nav>
+    <a href="index.html" title="Home"><i class="fa-solid fa-house"></i></a>
+    <a href="about.html" title="About"><i class="fa-solid fa-user"></i></a>
+    <a href="portfolio.html" title="Portfolio"><i class="fa-solid fa-folder-open"></i></a>
+    <a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+  </nav>
 </body>
 </html>
